@@ -1,0 +1,123 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu {
+    height: 50px;
+    background: #212121;
+}
+
+.menu__list {
+    padding: 10px 85px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.menu__item {
+    border-right: 2px dashed #000000;
+    padding-right: 45px;
+}
+
+.menu__item:last-child {
+    border-right: none;
+}
+
+.menu__link {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.menu__link:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.subheader {
+    background: rgba(0, 0, 0, 0.6);
+    mix-blend-mode: normal;
+    height: 87px;
+}
+
+.subheader__logo {
+    padding-top: 19px;
+    padding-bottom: 9px;
+}
+
+.subheader__icon {
+    max-width: 100%;
+}
+
+.subheader__official {
+    opacity: 0.5;
+    font-weight: 100;
+    font-size: 13px; 
+    color: #FFFFFF;
+    margin-top: 6px;
+}
+
+.subheader__tel {
+    padding-top: 19px;
+    padding-bottom: 9px;
+    text-align: right;
+}
+
+.subheader__call-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;   
+    color: #FFFFFF;
+    margin-top: 6px;    
+}
+
+.subheader__phone {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase; 
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.subheader__phone:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.subheader__btn {
+  padding-top: 20px;
+}
+
+.button {
+    width: 172px;
+    height: 46px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 4px;
+}
+
+.button__link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 46px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.button__link:hover {
+    color: #FFFFFF;
+}
+
