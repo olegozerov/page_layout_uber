@@ -1,5 +1,6 @@
 * {
     font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
 }
 
 header {
@@ -7,7 +8,7 @@ header {
 }
 
 .menu {
-    height: 50px;
+    min-height: 50px;
     background: #212121;
     position: fixed;
     width: 100%;
@@ -215,7 +216,7 @@ header {
     background: #FFFFFF;
 }
 
-.benefits__note {
+.label {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -231,8 +232,10 @@ header {
     margin: 0 auto;
 }
 
-.benefits__header {
+.title {
+	display: block;
     margin-top: 33px;
+	margin-bottom: 16px;
     font-weight: 700;
     font-size: 38px;
     line-height: 48px;
@@ -242,13 +245,18 @@ header {
     color: #222222;
 }
 
-.card {
+.cards .col-md-6 {
+	display: flex;
+	align-items:center;
     justify-content: center;
-    align-items: start;
-    min-height: 155px;
 }
 
-
+.card {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	margin-bottom: 26px;
+}
 
 .card__circle {
     width: 116px;
@@ -261,14 +269,25 @@ header {
     margin-right: 25px;
 }
 
+.card__about {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+    justify-content: s;
+	max-width: 371px;
+}
+
+.cards .col-md-6:nth-child(2n) .card .card__about {
+	padding-right: 30px;
+}
+
 .card__header {
     font-weight: 400;
     font-size: 17px;
     line-height: 21px;
-    align-items: center;
-    vertical-align: center;
+    align-items: flex-start;
     color: #1EACC7;
-    margin: 0;
+	margin: 0;
 }
 
 .card__text {
@@ -277,5 +296,5 @@ header {
     line-height: 21px;
     align-items: center;
     color: #202020;
-    margin: 0;
+	margin: 0;
 }
