@@ -1,3 +1,6 @@
+
+@import variables.sass
+
 *
 	font-family: 'Roboto', sans-serif
 	box-sizing: border-box
@@ -18,7 +21,7 @@ header
 	justify-content: space-between
 	margin: 0
 .menu__item
-	border-right: 2px dashed #000000
+	border-right: 2px dashed $dark
 	padding-right: 45px
 	&:last-child
 		border-right: none
@@ -29,9 +32,9 @@ header
 	line-height: 30px
 	display: flex
 	align-items: center
-	color: #FFFFFF
+	color: $white
 	&:hover
-		color: #FFFFFF
+		color: $white
 		text-decoration: underline
 .subheader
 	background: rgba(0, 0, 0, 0.6)
@@ -50,7 +53,7 @@ header
 	opacity: 0.5
 	font-weight: 100
 	font-size: 13px
-	color: #FFFFFF
+	color: $white
 	margin-top: 6px
 .subheader__tel
 	padding-top: 19px
@@ -62,17 +65,17 @@ header
 	font-size: 12px
 	line-height: 14px
 	text-align: right
-	color: #FFFFFF
+	color: $white
 	margin-top: 6px
 .subheader__phone
 	font-style: normal
 	font-weight: 400
 	font-size: 22px
 	text-transform: uppercase
-	color: #FFFFFF
+	color: $white
 	text-decoration: none
 	&:hover
-		color: #FFFFFF
+		color: $white
 		text-decoration: underline
 .subheader__btn
 	padding-top: 20px
@@ -91,10 +94,10 @@ header
 	align-items: center
 	text-align: center
 	text-transform: uppercase
-	color: #FFFFFF
+	color: $white
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
 	&:hover
-		color: #FFFFFF
+		color: $white
 .promo
 	min-height: 800px
 	background: url('../images/bg/first_bg.png') center center/cover no-repeat
@@ -107,7 +110,7 @@ header
 	align-items: center
 	text-align: center
 	text-transform: uppercase
-	color: #FFFFFF
+	color: $white
 	margin-bottom: 30px
 .promo__subheader
 	font-weight: 700
@@ -116,7 +119,7 @@ header
 	align-items: center
 	text-align: center
 	text-transform: uppercase
-	color: #FFFFFF
+	color: $white
 	margin-bottom: 16px
 .promo__text
 	font-weight: 400
@@ -125,7 +128,7 @@ header
 	display: flex
 	align-items: center
 	text-align: center
-	color: #FFFFFF
+	color: $white
 	margin-bottom: 116px
 .promo__btn
 	display: block
@@ -144,10 +147,10 @@ header
 	font-size: 18px
 	line-height: 63px
 	text-transform: uppercase
-	color: #FFFFFF
+	color: $white
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
 	&:hover
-		color: #FFFFFF
+		color: $white
 .benefits
 	padding-top: 18px
 	padding-bottom: 64px
@@ -164,10 +167,11 @@ header
 	line-height: 11px
 	text-transform: uppercase
 	text-align: center
-	color: #FFFFFF
+	color: $white
 	mix-blend-mode: normal
-	background: #000000
+	background: $dark
 	margin: 0 auto
+	cursor: pointer
 
 .title
 	display: block
@@ -179,12 +183,12 @@ header
 	align-items: center
 	text-align: center
 	text-transform: uppercase
-	color: #222222
+	color: $lite-dark
 .subtitle
 	margin-top: 15px
 	font-size: 16px
 	text-align: center
-	color: #222222
+	color: $lite-dark
 	margin: 0
 .cards
 	.col-md-6
@@ -203,7 +207,7 @@ header
 .card__circle
 	width: 116px
 	height: 116px
-	background: #1EACC7
+	background: $cea
 	display: flex
 	justify-content: center
 	align-items: center
@@ -220,7 +224,7 @@ header
 	font-size: 17px
 	line-height: 21px
 	align-items: flex-start
-	color: #1EACC7
+	color: $cea
 	margin: 0
 .card__text
 	font-weight: 300
@@ -266,14 +270,43 @@ header
 		align-items: center
 		text-align: center
 		text-transform: uppercase
-		color: #FFFFFF
+		color: $white
 	&__plus
-		border: 1px solid #000000
+		border: 1px solid $dark
 		height: 26px
 		width: 26px
 		border-radius: 50%
-		background: #000000
+		background: $dark
 		display: flex
 		justify-content: center
 		align-items: center
 		cursor: pointer
+.choise
+	min-height: 892px
+	background: url('../images/bg/auto_bg.png') center (center / cover) no-repeat
+	padding: 56px 0 137.5px 0
+	.row
+		display: flex
+		justify-content: center
+	.label
+		mix-blend-mode: normal
+		color: $dark
+		background: $white
+	.title
+		color: $white
+		margin-bottom: 1px
+		margin-top: 27px
+	.subtitle
+		color: $white
+		margin-bottom: 54px
+	&__image
+		max-height: 480px
+		display: flex
+		justify-content: center
+	&__text-under-img
+		font-weight: 300
+		font-size: 17px
+		line-height: 24px
+		text-align: center
+		color: $lite-dark
+		max-width: 327px

@@ -251,6 +251,7 @@ header {
   mix-blend-mode: normal;
   background: #000000;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .title {
@@ -441,4 +442,49 @@ header {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+}
+
+.choise {
+  min-height: 892px;
+  background: url("../images/bg/auto_bg.png") center center/cover no-repeat;
+  padding: 56px 0 137.5px 0;
+}
+.choise .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.choise .label {
+  mix-blend-mode: normal;
+  color: #000000;
+  background: #FFFFFF;
+}
+.choise .title {
+  color: #FFFFFF;
+  margin-bottom: 1px;
+  margin-top: 27px;
+}
+.choise .subtitle {
+  color: #FFFFFF;
+  margin-bottom: 54px;
+}
+.choise__image {
+  max-height: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.choise__text-under-img {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  color: #222222;
+  max-width: 327px;
 }/*# sourceMappingURL=style-sass.css.map */
