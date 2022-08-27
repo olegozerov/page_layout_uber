@@ -409,8 +409,23 @@ header
 			color: $my-red
 			text-decoration: none
 .foo
-	padding: 11px 22px
 	min-height: 155px
+	padding: 11px 22px
+	.social
+		padding: 48px 0 72px 0
+		display: flex
+		justify-content: space-between
+		align-items: center
+		max-width: 156px
+		&__link
+			width: 35px
+			height: 35px
+			border-radius: 50%
+			background: #070716
+			a>img
+			display: flex
+			justify-content: center
+			align-items: center
 	&__menu
 		display: flex
 		flex-direction: column
@@ -433,7 +448,12 @@ header
 		font-weight: 300
 		font-size: 15px
 		text-transform: uppercase
-		color: #070716
+
+		a
+			color: #070716
+			text-decoration: none
+		a:hover
+			color: $my-red
 	&__h3list
 		display: flex
 		justify-content: space-between
@@ -447,10 +467,33 @@ header
 		font-weight: 300
 		font-size: 11px
 		text-transform: uppercase
-		color: #999999
+
+		a
+			color: #999999
+			text-decoration: none
+		a:hover
+			color: $my-red
 	&__lang
 		font-weight: 400
 		font-size: 11px
 		text-align: center
 		text-transform: uppercase
-		color: #1FBAD6
+		a
+			text-decoration: none
+			color: #1FBAD6
+		a:hover
+			color: $my-red
+	.market
+		padding: 51px 0 77px 0
+		display: flex
+		justify-content: end
+		align-items: center
+		&__block
+			width: 296px
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&__link
+			img
+				width: 95px
+				height: 27px
