@@ -639,6 +639,10 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
+.foo .social__link img {
+  width: 16px;
+  height: 16px;
+}
 .foo__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -742,6 +746,7 @@ header {
 }
 .foo .market__block {
   width: 296px;
+  height: 27px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -754,5 +759,4 @@ header {
 }
 .foo .market__link img {
   width: 95px;
-  height: 27px;
 }/*# sourceMappingURL=style-sass.css.map */
