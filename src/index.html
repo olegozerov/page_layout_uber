@@ -18,9 +18,9 @@
     </head>
     <body>
         <header>
-            <nav class="menu">
+            <nav>
                 <div class="container">
-                    <ul class="menu__list">
+                    <ul class="menu">
                         <li class="menu__item">
                             <a href="#" class="menu__link">Главная</a>
                         </li>
@@ -45,11 +45,16 @@
                         </li>
                     </ul>
                 </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
             <div class="subheader">
                 <div class="container">
                     <div class="row">
-                        <div class="subheader__logo col-md-4 offset-md-1">
+                        <div class="subheader__logo col-6 col-md-4 offset-md-1">
                             <a href="#" class="subheader__link">
                                 <img
                                     src="./icons/logo/image.png"
@@ -62,7 +67,9 @@
                             </div>
                         </div>
 
-                        <div class="subheader__tel col-md-2 offset-md-2">
+                        <div
+                            class="subheader__tel xs-hidden col-xl-2 offset-xl-2 col-md-3 offset-md-1"
+                        >
                             <div class="subheader__call-text">
                                 Звоните нам ежедневно
                             </div>
@@ -71,7 +78,7 @@
                             >
                         </div>
 
-                        <div class="subheader__btn col-md-2">
+                        <div class="subheader__btn col-6 col-lg-2 col-md-3">
                             <button class="button">
                                 <a href="#" class="button__link"
                                     >заказать звонок</a
@@ -86,7 +93,7 @@
         <section class="promo">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 offset-md-1">
+                    <div class="col-lg-10 offset-lg-1 col-md-12 offset-md-0">
                         <h1 class="promo__header">КОМПАНИЯ UBER PARTNERS!</h1>
                         <h2 class="promo__subheader">
                             ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!
@@ -518,7 +525,7 @@
         <footer class="foo">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-3 col-sm-12 social_order">
                         <div class="social">
                             <div class="social__link">
                                 <a href="#"
@@ -550,7 +557,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-7 col-sm-12 menu_order">
                         <div class="foo__menu">
                             <div class="divider"></div>
                             <ul class="foo__h2list">
@@ -584,7 +591,7 @@
                             <div class="foo__lang"><a href="#">русский</a></div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-2 col-sm-12 market_order">
                         <div class="market">
                             <div class="market__block">
                                 <a href="#" class="market__link"
@@ -608,5 +615,6 @@
                 </div>
             </div>
         </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>
