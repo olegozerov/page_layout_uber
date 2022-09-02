@@ -1,3 +1,7 @@
+@media (min-width: 768px) and (max-width: 3000px)
+	.xxl-hidden
+		display: none
+
 @media ( max-width:  1200px)
 	.menu
 		&__item
@@ -38,6 +42,8 @@
 				width: 120px
 				&__link
 					font-size: 11px
+	.lg-hidden
+		display: none
 	.promo
 		&__header
 			font-size: 41px
@@ -72,7 +78,7 @@
 				img
 					width: 75px
 
-@media ( max-width: 767px)
+@media ( max-width: 768px)
 
 	.menu
 		position: fixed
@@ -94,8 +100,22 @@
 			padding-right: 0
 		&__link
 			font-size: 12px
+	.subheader
+		&__btn
+			padding-top: 0
+			&>a
+				display: block
+				margin-left: 37%
+			.button
+				width: 155px
+				display: block
+				margin-left: 37%
+
+	.sm-hidden
+		display: none
+
 	.foo
-		padding-top: 24px
+		padding: 24px 0 0 0
 		.social
 			flex-direction: row
 			margin: auto
@@ -156,11 +176,6 @@
 					display: none
 				&:nth-child(3)
 					transform: translateY(3px) rotate(45deg)
-	.xs-hidden
-		display: none
-	.xs-visible
-		display: block
-
 	.promo
 		&__header
 			font-size: 37px
@@ -173,3 +188,57 @@
 			margin-right: 0
 
 @media ( max-width: 576px)
+	header
+		height: 32px
+	nav
+		height: 32px
+	.subheader
+		height: 62px
+		top: 32px
+		&__btn
+			padding-top: 0
+			&>a
+				display: block
+				margin-left: 25%
+				margin-top: 14px
+			.button
+				width: 110px
+				height: 22px
+				display: flex
+				align-items: center
+				justify-content: center
+				margin-left: 18%
+				&__link
+					font-size: 10px
+					line-height: 0
+		&__phone
+			font-size: 12px
+	.s-hide
+		display: none
+	.promo
+		min-height: 400px
+		padding-top: 61px
+		padding-bottom: 34px
+		&__header
+			font-weight: 900
+			font-size: 30px
+			line-height: 35px
+			padding-top: 41px
+		&__subheader
+			font-weight: 700
+			font-size: 20px
+			line-height: 23px
+			padding-bottom: 73px
+		&__btn
+			width: 189px
+			height: 50px
+			display: flex
+			align-items: center
+			justify-content: center
+		&__link
+			font-size: 16px
+	.foo
+		&__h3list
+			flex-wrap: wrap
+			width: 235px
+			min-height: 30px
